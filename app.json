@@ -1,0 +1,71 @@
+{
+   "expo": {
+      "name": "S2CITIES",
+      "slug": "s2cities",
+      "owner": "s2cities-asp",
+      "description": "Safe and Smart Cities. For safety, for women, for everybody.",
+      "version": "1.0.0",
+      "orientation": "portrait",
+      "icon": "./assets/images/new_app_icon.png",
+      "scheme": "myapp",
+      "userInterfaceStyle": "automatic",
+      "splash": {
+         "image": "./assets/images/splash_screen.png",
+         "resizeMode": "cover",
+         "backgroundColor": "#2B68FF"
+      },
+      "assetBundlePatterns": ["**/*"],
+      "ios": {
+         "supportsTablet": true,
+         "bundleIdentifier": "com.s2citiesasp.s2cities"
+      },
+      "android": {
+         "icon": "./assets/images/new_android_app_icon.png",
+         "adaptiveIcon": {
+            "foregroundImage": "./assets/images/new_android_app_icon_with_transparent_margin.png",
+            "backgroundColor": "#1E1E1E"
+         },
+         "permissions": [
+            "android.permission.RECORD_AUDIO",
+            "android.permission.MODIFY_AUDIO_SETTINGS",
+            "android.permission.ACCESS_COARSE_LOCATION",
+            "android.permission.ACCESS_FINE_LOCATION",
+            "android.permission.FOREGROUND_SERVICE",
+            "android.permission.CAMERA"
+         ],
+         "package": "com.s2citiesasp.s2cities",
+         "googleServicesFile": "./google-services.json"
+      },
+      "plugins": [
+         [
+            "expo-av",
+            {
+               "microphonePermission": "Allow $(PRODUCT_NAME) to access your microphone."
+            }
+         ],
+         [
+            "expo-location",
+            {
+               "locationAlwaysAndWhenInUsePermission": "Allow $(PRODUCT_NAME) to use your location."
+            }
+         ],
+         [
+            "expo-camera",
+            {
+               "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera."
+            }
+         ],
+         [
+            "expo-image-picker",
+            {
+               "photosPermission": "The app accesses your photos to let you share them with your friends."
+            }
+         ]
+      ],
+      "extra": {
+         "eas": {
+            "projectId": "32228617-e498-47fe-9973-67050310ba93"
+         }
+      }
+   }
+}
